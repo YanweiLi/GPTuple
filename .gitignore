@@ -1,0 +1,12 @@
+.DS_Store
+xcuserdata
+xccheckout
+DerivedData
+*.xccheckout
+*.xcuserstate
+*.xcbkptlist
+DTO/*.*
+
+# CocoaPods
+Pods/
+Podfile.lock
