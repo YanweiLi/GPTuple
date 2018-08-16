@@ -1,0 +1,16 @@
+
+
+# workspace文件名
+workspace 'GPTuple.xcworkspace' 
+
+target 'GPTuple' do
+  platform :ios, '8.0'
+  project './GPTuple/GPTuple.xcodeproj'
+end
+
+target 'GPTupleDemo' do
+  platform :ios, '8.0'
+
+  project './GPTupleDemo/GPTupleDemo.xcodeproj'
+end
+
