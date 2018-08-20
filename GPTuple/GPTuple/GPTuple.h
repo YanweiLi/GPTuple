@@ -9,6 +9,9 @@
 #ifndef GP_TUPLE_H_
 #define GP_TUPLE_H_
 
+#import <GPTuple/GPMacrosDef.h>
 #import <GPTuple/GPTupleBase.h>
+#import <GPTuple/GPTupleSub.h>
+
 
 #endif /* GP_TUPLE_H_ */

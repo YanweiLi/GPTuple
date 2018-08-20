@@ -1,0 +1,6 @@
+framework module GPTuple {
+  umbrella header "GPTuple.h"
+
+  export *
+  module * { export * }
+}

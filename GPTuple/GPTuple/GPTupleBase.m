@@ -59,10 +59,10 @@ GetterType getterTable[] = {
 
 @implementation GPTupleBase
 
-+ (__kindof GPTupleBase *)tupleWithCount:(NSUInteger)count
++ (__kindof GPTupleBase *) tupleWithCount:(NSUInteger)count
 {
 #define TUPLE_CLASS(_COUNT_)    "GPTuple" GP_STRINGIFY(_COUNT_)
-#define CLASS_TABLE              GP_FOR_COMMA(20, TUPLE_CLASS)
+#define CLASS_TABLE              GP_FOR_COMMA(21, TUPLE_CLASS)
     static const char *classNames[] = {
         CLASS_TABLE // 构建20大小的数组
     };
@@ -112,7 +112,7 @@ GetterType getterTable[] = {
     return _elementCount;
 }
 
-- (id)objectAtIndexedSubscript:(NSUInteger)index
+- (id) objectAtIndexedSubscript:(NSUInteger)index
 {
     NSParameterAssert(index < _elementCount);
     if (index < _elementCount) {
@@ -122,7 +122,7 @@ GetterType getterTable[] = {
     }
 }
 
-- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)index
+- (void) setObject:(id)obj atIndexedSubscript:(NSUInteger)index
 {
     NSParameterAssert(index < _elementCount);
     if (index < _elementCount) {
@@ -130,7 +130,7 @@ GetterType getterTable[] = {
     }
 }
 
-- (BOOL)isEqual:(GPTupleBase *)other
+- (BOOL) isEqual:(GPTupleBase *)other
 {
     if (self == other)
     {
@@ -158,7 +158,7 @@ GetterType getterTable[] = {
     return YES;
 }
 
-- (__kindof GPTupleBase *)join:(GPTupleBase *)other
+- (__kindof GPTupleBase *) join:(GPTupleBase *)other
 {
     NSUInteger selfCount = _elementCount;
     NSUInteger otherTupleCount = other.count;
@@ -180,7 +180,7 @@ GetterType getterTable[] = {
     return newInstance;
 }
 
-- (__kindof GPTupleBase *)take:(NSUInteger)count
+- (__kindof GPTupleBase *) take:(NSUInteger)count
 {
     NSParameterAssert(count >= 1);
     if (count < 1) {
@@ -200,7 +200,7 @@ GetterType getterTable[] = {
     return newInstance;
 }
 
-- (__kindof GPTupleBase *)drop:(NSUInteger)count
+- (__kindof GPTupleBase *) drop:(NSUInteger)count
 {
     NSUInteger selfCount = _elementCount;
     NSParameterAssert(count < selfCount);
@@ -220,7 +220,7 @@ GetterType getterTable[] = {
     return newInstance;;
 }
 
-- (NSArray *)allObjects
+- (NSArray *) allObjects
 {
     NSMutableArray *array = [NSMutableArray array];
     for (NSObject *item in self) {
@@ -231,7 +231,7 @@ GetterType getterTable[] = {
 
 #pragma mark - NSFastEnumeration
 
-- (NSUInteger)countByEnumeratingWithState:(nonnull NSFastEnumerationState *)state
+- (NSUInteger) countByEnumeratingWithState:(nonnull NSFastEnumerationState *)state
                                   objects:(id  _Nullable __unsafe_unretained * _Nonnull)buffer
                                     count:(NSUInteger)len
 {
@@ -251,7 +251,7 @@ GetterType getterTable[] = {
 
 #pragma mark - NSCopying
 
-- (nonnull id)copyWithZone:(nullable NSZone *)zone
+- (nonnull id) copyWithZone:(nullable NSZone *)zone
 {
     GPTupleBase *copied = [[self class] new];
     for (int i = 0; i < _elementCount; ++i) {

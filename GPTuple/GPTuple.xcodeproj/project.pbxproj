@@ -10,8 +10,9 @@
 		D7F7579E21241D7F006C9641 /* GPTupleBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F7579C21241D7F006C9641 /* GPTupleBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7F7579F21241D7F006C9641 /* GPTupleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7579D21241D7F006C9641 /* GPTupleBase.m */; };
 		D7F757A121243D14006C9641 /* GPTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F7579921241CBF006C9641 /* GPTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7F757A42124510F006C9641 /* GPTupleSub.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F757A22124510F006C9641 /* GPTupleSub.h */; };
+		D7F757A42124510F006C9641 /* GPTupleSub.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F757A22124510F006C9641 /* GPTupleSub.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7F757A52124510F006C9641 /* GPTupleSub.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F757A32124510F006C9641 /* GPTupleSub.m */; };
+		D7F757AB212AA032006C9641 /* GPMacrosDef.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F757A02124243E006C9641 /* GPMacrosDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 			files = (
 				D7F757A121243D14006C9641 /* GPTuple.h in Headers */,
 				D7F7579E21241D7F006C9641 /* GPTupleBase.h in Headers */,
+				D7F757AB212AA032006C9641 /* GPMacrosDef.h in Headers */,
 				D7F757A42124510F006C9641 /* GPTupleSub.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

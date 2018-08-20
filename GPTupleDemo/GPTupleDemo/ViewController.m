@@ -21,15 +21,12 @@
     
     GPTupleBase* base = [GPTupleBase tupleWithCount:20];
     
-    NSArray* a = @[@1 , @3 , @56];
+    NSArray* a = @[@1 , @"who am I ?" , @YES];
     base = [GPTupleBase tupleWithArray:a];
+    
+    
+    GPTuple3<NSString* , NSNumber* , NSNumber*>* tuple3 = [[GPTuple3 alloc] initWithFirst:@"who I am?" second:@1 third:@YES];
+    NSLog(@"%@" , tuple3);
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
