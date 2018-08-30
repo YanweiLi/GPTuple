@@ -100,6 +100,7 @@
 				D7F7578A21241C8D006C9641 /* Headers */,
 				D7F7578B21241C8D006C9641 /* Resources */,
 				D7F7578C21241C8D006C9641 /* Headers */,
+				D7C8FFC92137853B007A7DBE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,6 +152,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7C8FFC92137853B007A7DBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# 打包脚本\n\"${SRCROOT}/../Script/buildIgnoreWarning.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7F7578821241C8D006C9641 /* Sources */ = {
