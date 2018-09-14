@@ -12,6 +12,7 @@
 #import <GPTuple/GPMacrosDef.h>
 #import <GPTuple/GPTupleBase.h>
 #import <GPTuple/GPTupleSub.h>
+#import <GPTuple/GPNamedTupleImp.h>
 
 
 #endif /* GP_TUPLE_H_ */
