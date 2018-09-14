@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7873377214B9998002ADB56 /* GPNamedTupleImp.h in Headers */ = {isa = PBXBuildFile; fileRef = D7873376214B9998002ADB56 /* GPNamedTupleImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7F7579E21241D7F006C9641 /* GPTupleBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F7579C21241D7F006C9641 /* GPTupleBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7F7579F21241D7F006C9641 /* GPTupleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7579D21241D7F006C9641 /* GPTupleBase.m */; };
 		D7F757A121243D14006C9641 /* GPTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F7579921241CBF006C9641 /* GPTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7873376214B9998002ADB56 /* GPNamedTupleImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPNamedTupleImp.h; sourceTree = "<group>"; };
 		D7F7578E21241C8D006C9641 /* GPTuple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPTuple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F7579321241C8D006C9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7F7579921241CBF006C9641 /* GPTuple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTuple.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				D7F7579321241C8D006C9641 /* Info.plist */,
 				D7F7579921241CBF006C9641 /* GPTuple.h */,
+				D7873376214B9998002ADB56 /* GPNamedTupleImp.h */,
 				D7F757A02124243E006C9641 /* GPMacrosDef.h */,
 				D7F7579C21241D7F006C9641 /* GPTupleBase.h */,
 				D7F7579D21241D7F006C9641 /* GPTupleBase.m */,
@@ -77,6 +80,7 @@
 				D7F757A121243D14006C9641 /* GPTuple.h in Headers */,
 				D7F7579E21241D7F006C9641 /* GPTupleBase.h in Headers */,
 				D7F757AB212AA032006C9641 /* GPMacrosDef.h in Headers */,
+				D7873377214B9998002ADB56 /* GPNamedTupleImp.h in Headers */,
 				D7F757A42124510F006C9641 /* GPTupleSub.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
